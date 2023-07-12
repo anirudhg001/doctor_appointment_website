@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Routers from "../routes/Routers";
+import header from "../components/header/header";
+import footer from "../components/footer/footer";
+import routers from "../routes/routers";
 
 const layout = () => {
   return <>

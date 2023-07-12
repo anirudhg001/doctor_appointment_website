@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import "./app.css";
-import Layout from './Layout/Layout';
 
 function App() {
- 
-
-  return <Layout/>;
+  return (
+    <>
+      <h1 className="text-[20px] text-blue-600">Hello react + vite app</h1>
+    </>
+  );
 }
 
-export default App
+export default App;
