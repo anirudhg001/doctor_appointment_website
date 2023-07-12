@@ -1,7 +1,8 @@
 import React from "react";
+import { Router } from "react-router-dom";
 
-const routers = () => {
-  return <div>routers</div>;
+const Routers = () => {
+  return <div>Routers</div>;
 };
 
-export default routers;
+export default Routers;
