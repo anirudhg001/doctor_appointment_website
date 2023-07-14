@@ -8,7 +8,9 @@ import heroImg03 from '../assets/images/hero-img03.png';
 import icon01 from '../assets/images/icon01.png';
 import icon02 from '../assets/images/icon02.png';
 import icon03 from '../assets/images/icon03.png';
+import featureImg from '../assets/images/feature-img.png'
 import About from "../components/About/About";
+import ServiceList from "../components/Services/ServiceList";
 const Home = () => {
   return <>
   
@@ -101,7 +103,7 @@ const Home = () => {
         <h2 className="text-[26px] leading-9 text-headingColor font-[700] 
         text-center">Find a Doctor</h2>
         <p className="text-[16px] leading-7 text-textColor font-[400]
-         mt-4 text-center">World class care for everyone. Our health System offers unmatched, 
+         mt-4 text-center">World class care for everyone. Our health System offers<br /> unmatched, 
          expert health care. From the lab to the Clinic.</p>
 
          <Link to='./doctors' className="w-[44px] h-[44px] rounded-full border border-solid 
@@ -122,7 +124,7 @@ const Home = () => {
         <h2 className="text-[26px] leading-9 text-headingColor font-[700] 
         text-center">Find a Location</h2>
         <p className="text-[16px] leading-7 text-textColor font-[400]
-         mt-4 text-center">World class care for everyone. Our health System offers unmatched, 
+         mt-4 text-center">World class care for everyone. Our health System offers<br /> unmatched, 
          expert health care. From the lab to the Clinic.</p>
 
          <Link to='./doctors' className="w-[44px] h-[44px] rounded-full border border-solid 
@@ -143,7 +145,7 @@ const Home = () => {
         <h2 className="text-[26px] leading-9 text-headingColor font-[700] 
         text-center">Book Appointment</h2>
         <p className="text-[16px] leading-7 text-textColor font-[400]
-         mt-4 text-center">World class care for everyone. Our health System offers unmatched, 
+         mt-4 text-center">World class care for everyone. Our health System offers<br /> unmatched, 
          expert health care. From the lab to the Clinic.</p>
 
          <Link to='./doctors' className="w-[44px] h-[44px] rounded-full border border-solid 
@@ -168,9 +170,38 @@ const Home = () => {
         <p className="text__para text-center">World class care for everyone. Our health system offers unmatched, 
         expert health care.</p>
       </div>
+      <ServiceList />
     </div>
   </section>
   {/*============= services section end ============ */}
+
+  {/* ============= feature section start=================*/}
+  <section>
+    <div className="container">
+      <div className="flex items-center justify-between flex-col lg:flex-row ">
+
+        {/*==========feature content ======== */}
+        <div className="xl:w-[670px]">
+          <h2 className="heading">Get virtual treatment <br/>anytime
+          </h2>
+          <ul className="pt-4">
+            <li className="text__para">1. Schedule the appointment directly.</li>
+            <li className="text__para">2. Search for your doctor here, and contact their office.</li>
+            <li className="text__para">3. View our doctors who are accepting new patients, use the online scheduling tool to select an appointmnet time.
+            </li>
+          </ul>
+          <Link to='/'><button className="btn">Learn More</button></Link>
+        </div>
+
+        {/* ============= feature img =========*/}
+        <div className="relative z-10 xl:w-[770]
+        flex justify-end mt-[50px] lg:mt-0">
+          <img src={featureImg} className="w-3/4" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* ============= feature section end=================*/}
   </>
 };
 
